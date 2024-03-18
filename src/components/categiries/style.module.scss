@@ -1,0 +1,19 @@
+.categoriesContainer {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: space-around;
+  span {
+    font-weight: 800;
+    cursor: pointer;
+    transition: all ease-in-out 0.1s;
+    &:hover {
+      color: var(--color-main);
+      transition: all ease-in-out 0.1s;
+    }
+    &:active {
+      color: var(--color-text-active);
+    }
+  }
+}

@@ -1,0 +1,39 @@
+:root{
+  --color-main: #ecab02;
+  --color-secondary: #404545;
+  --color-text-primary: #efffff;
+  --color-text-secondary: #f6d987;
+  --color-text-active: #a27c18;
+  --color-background: #969e9e;
+}
+
+body{
+  font-size: 16px;
+  background: rgb(0,0,0);
+  background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(64,64,64,1) 100%);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: var(--color-text-primary);
+  a{
+    font-weight: inherit;
+    text-decoration: none;
+    color:var(--color-text-primary)
+  }
+  ul{
+    list-style-type: none;
+  }
+}
+
+button, input{
+  background-color: inherit;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  color: inherit;
+}
+
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
+}

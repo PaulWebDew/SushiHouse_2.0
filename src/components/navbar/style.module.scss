@@ -1,0 +1,33 @@
+.nav {
+  flex: 1;
+  ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 2rem;
+    font-weight: 400;
+    li {
+      font-weight: 300;
+      font-size: 1.2rem;
+      .icon {
+        position: relative;
+        height: 10px;
+        transform: rotateX(90deg);
+        transition: all ease 0.5s;
+      }
+      &:hover a {
+        color: var(--color-text-secondary);
+      }
+    }
+  }
+}
+
+.icon {
+  position: relative;
+  height: 10px;
+  transform: rotateX(90deg);
+  transition: all ease 0.5s;
+  &:hover {
+    transform: rotateX(0deg);
+    transition: all ease 0.5s;
+  }
+}

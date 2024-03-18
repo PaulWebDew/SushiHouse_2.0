@@ -1,0 +1,106 @@
+.searchContainer {
+  position: relative;
+}
+
+.searchIcon {
+  margin-bottom: 0.5rem;
+  display: flex;
+  padding: 0.5rem 1rem;
+  gap: 0.5rem;
+  align-items: center;
+  color: var(--color-text-primary);
+  &:before,
+  &:after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: var(--color-text-primary);
+    opacity: 0.5;
+  }
+  svg {
+    cursor: pointer;
+    position: relative;
+    top: 5px;
+    left: 6px;
+  }
+  svg:hover {
+    color: var(--color-text-secondary);
+    filter: drop-shadow(2px 2px 1px var(--color-text-secondary));
+  }
+}
+
+.searchInputWrapperClosed {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height ease-in-out 0.3s;
+}
+.searchInputWrapperOpen {
+  overflow: hidden;
+  max-height: 3rem;
+  transition: max-height ease-in-out 0.3s;
+}
+
+.searchInput {
+  top: -0.5rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  background-color: #3c3c3c;
+  input {
+    margin: 0 auto;
+  }
+}
+
+.groupContainer {
+  width: 50%;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  span {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.5rem;
+    background-color: #646464;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    transition: all ease 0.1s;
+    &:hover {
+      color: var(--color-text-secondary);
+      background-color: var(--color-background);
+      transition: all ease 0.1s;
+    }
+  }
+}
+
+.inputContainer {
+  flex: 1;
+  padding: 0 0.5rem;
+  color: var(--color-text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 2rem;
+  transition: all ease 0.1s;
+  &:focus-within {
+    outline: 2px solid var(--color-main);
+  }
+  input {
+    width: 100%;
+    font-size: 1rem;
+    transition: all ease 0.1s;
+  }
+  button {
+    cursor: pointer;
+    transition: all ease 0.1s;
+    &:hover {
+      color: var(--color-main);
+      transition: all ease 0.1s;
+    }
+  }
+}
