@@ -1,9 +1,35 @@
 .sliderContainer {
   width: 95%;
   margin: 0 auto;
+  position: relative;
 }
 
-.dotsContainer {
-  margin-top: 1rem !important;
-  border: 1px solid red !important;
+
+.nextButton, .prevButton {
+  cursor: pointer;
+  color: black;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-main);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+  &:hover{
+    background-color: var(--color-text-secondary);
+  }
+}
+
+.nextButton{
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+
+}
+.prevButton{
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
 }

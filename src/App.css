@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Roboto R";
+  src: url('./fonts/Roboto/Roboto-Regular.ttf');
+}
+
 :root{
   --color-main: #ecab02;
   --color-secondary: #404545;
@@ -8,6 +13,7 @@
 }
 
 body{
+  font-family:"Roboto R";
   font-size: 16px;
   background: rgb(0,0,0);
   background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(64,64,64,1) 100%);

@@ -16,8 +16,13 @@ export default function SliderAdvertisment() {
     const { style, onClick } = props;
     return (
       <ArrowRight
-        style={{ ...style, display: "block", border: "2px solid red" }}
-        onClick={onClick}
+        style={{
+          ...style,
+        }}
+        className={cls.nextButton}
+        onClick={() => onClick()}
+        width={40}
+        height={40}
       />
     );
   }
@@ -25,7 +30,15 @@ export default function SliderAdvertisment() {
   function SamplePrevArrow(props: any) {
     const { style, onClick } = props;
     return (
-      <ArrowLeft style={{ ...style, display: "block" }} onClick={onClick} />
+      <ArrowLeft
+        className={cls.prevButton}
+        width={40}
+        height={40}
+        style={{
+          ...style,
+        }}
+        onClick={() => onClick()}
+      />
     );
   }
   const settings = {

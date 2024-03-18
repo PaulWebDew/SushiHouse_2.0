@@ -1,9 +1,14 @@
-import React, { FC } from "react";
-import { IIconsProps } from "@/assets/types";
+import { FC } from "react";
+import { IIconsProps } from "../types.ts";
 
-export const ArrowLeft: FC<IIconsProps> = ({ width, height, className }) => {
+export const ArrowLeft: FC<IIconsProps> = ({
+  width,
+  height,
+  className,
+  onClick,
+}) => {
   return (
-    <div className={className}>
+    <div className={className} onClick={onClick}>
       <svg
         width={width ?? "800px"}
         height={height ?? "800px"}
