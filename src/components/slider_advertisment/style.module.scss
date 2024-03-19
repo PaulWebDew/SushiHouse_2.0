@@ -25,11 +25,18 @@
 .nextButton{
   top: 50%;
   right: 0;
-  transform: translate(50%, -50%);
+  transform: translate(110%, -50%);
 
 }
 .prevButton{
   top: 50%;
   left: 0;
-  transform: translate(-50%, -50%);
+  transform: translate(-110%, -50%);
+}
+
+.sliderItem{
+  width: 100%;
+  img{
+    width: 100%;
+  }
 }

@@ -54,16 +54,16 @@ export default function SliderAdvertisment() {
   return (
     <div className={cls.sliderContainer}>
       <Slider {...settings}>
-        <div>
+        <div className={cls.sliderItem}>
           <img src={image1} alt="sliderimg" />
         </div>
-        <div>
+        <div className={cls.sliderItem}>
           <img src={image2} alt="sliderimg" />
         </div>
-        <div>
+        <div className={cls.sliderItem}>
           <img src={image3} alt="sliderimg" />
         </div>
-        <div>
+        <div className={cls.sliderItem}>
           <img src={image4} alt="sliderimg" />
         </div>
       </Slider>

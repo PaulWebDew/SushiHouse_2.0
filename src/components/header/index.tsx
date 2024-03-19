@@ -20,9 +20,11 @@ export const Header = () => {
           +375(33) 657-00-90
         </Link>
         <NavBar />
-        <div className={cls.loginButton}>
-          <UserIcon width={20} height={20} />
-          <span>Вход</span>
+        <div>
+          <Link to={"/login"} className={cls.loginButton}>
+            <UserIcon width={20} height={20} />
+            <span>Вход</span>
+          </Link>
         </div>
         <div className={cls.basketButton}>
           <Link to={"/basket"}>
