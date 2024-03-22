@@ -1,9 +1,14 @@
-import React, { FC } from "react";
-import { IIconsProps } from "@/assets/types";
+import { FC } from "react";
+import { IIconsProps } from "../types.ts";
 
-export const UserIcon: FC<IIconsProps> = ({ width, height, className }) => {
+export const UserIcon: FC<IIconsProps> = ({
+  width,
+  height,
+  className,
+  ...props
+}) => {
   return (
-    <div className={className}>
+    <div className={className} {...props}>
       <svg
         fill="currentColor"
         width={width ?? "800px"}

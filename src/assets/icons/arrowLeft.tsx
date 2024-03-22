@@ -5,10 +5,10 @@ export const ArrowLeft: FC<IIconsProps> = ({
   width,
   height,
   className,
-  onClick,
+  ...props
 }) => {
   return (
-    <div className={className} onClick={onClick}>
+    <div className={className} {...props}>
       <svg
         width={width ?? "800px"}
         height={height ?? "800px"}

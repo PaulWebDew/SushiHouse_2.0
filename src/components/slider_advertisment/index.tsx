@@ -8,8 +8,8 @@ import image3 from "../../assets/image/sliderItems/30persentsSaleImage.png";
 import image4 from "../../assets/image/sliderItems/rollMart.jpeg";
 
 import cls from "./style.module.scss";
-import { ArrowRight } from "../../assets/icons/arrowRight";
-import { ArrowLeft } from "../../assets/icons/arrowLeft";
+import { ArrowRight } from "../../assets/icons/arrowRight.tsx";
+import { ArrowLeft } from "../../assets/icons/arrowLeft.tsx";
 
 export default function SliderAdvertisment() {
   function SampleNextArrow(props: any) {
@@ -41,6 +41,7 @@ export default function SliderAdvertisment() {
       />
     );
   }
+
   const settings = {
     infinite: true,
     speed: 500,

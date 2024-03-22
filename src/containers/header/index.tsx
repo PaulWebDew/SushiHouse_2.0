@@ -6,8 +6,8 @@ import { UserIcon } from "../../assets/icons/userIcon";
 import { CartIcon } from "../../assets/icons/cartIcon";
 
 import cls from "./style.module.scss";
-import { Search } from "../search";
-import { Categories } from "../categiries";
+import { Search } from "../../components/search";
+import { Categories } from "../../components/categiries";
 
 export const Header = () => {
   return (

@@ -1,10 +1,11 @@
 import { FC, useState } from "react";
-import { SearchIcon } from "../../assets/icons/searchIcon";
-import { SearchAltIcon } from "../../assets/icons/searchAlt";
+import { SearchIcon } from "../../assets/icons/searchIcon.tsx";
+import { SearchAltIcon } from "../../assets/icons/searchAlt.tsx";
 import clsx from "clsx";
 
 import cls from "./style.module.scss";
 import { searchGroups } from "./type.ts";
+
 export const Search: FC = () => {
   const [isOpenSearch, setIsOpenSearch] = useState(false);
   return (

@@ -1,0 +1,9 @@
+export { ArrowLeft } from "./arrowLeft.tsx";
+export { ArrowRight } from "./arrowRight.tsx";
+export { CartIcon } from "./cartIcon.tsx";
+export { EyeClosedIcon } from "./eyeClosed.tsx";
+export { EyeOpenIcon } from "./eyeOpen.tsx";
+export { LogoIcon } from "./logoIcon.tsx";
+export { SearchIcon } from "./searchIcon.tsx";
+export { SearchAltIcon } from "./searchAlt.tsx";
+export { UserIcon } from "./userIcon.tsx";

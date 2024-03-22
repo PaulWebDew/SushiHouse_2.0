@@ -1,5 +1,5 @@
-import React, { FC } from "react";
-import { IIconsProps } from "@/assets/types";
+import { FC } from "react";
+import { IIconsProps } from "../types.ts";
 
 export const LogoIcon: FC<IIconsProps> = ({ width, height, className }) => {
   return (
